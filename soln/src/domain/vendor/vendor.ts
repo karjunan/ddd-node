@@ -31,8 +31,6 @@ export class Vendor extends Entity implements AggregateRoot {
 
     private nationallyManaged: string;
 
-    private businessUnit: BusinessUnit;
-
 
     public static createVendor(vendorNumber: string,
                             vendorName: string, 

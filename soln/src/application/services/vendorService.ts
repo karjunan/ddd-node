@@ -4,9 +4,10 @@ import { SingleClient } from "../../domain/singleclient/singleClient";
 import { Tenant } from "../../domain/tenant/tenant";
 import { IVendorCreatedResponse } from "./IVendorCreatedResponse";
 import { injectable } from "inversify";
+import { IVendorService } from './IVendorService';
 
 @injectable()
-export class VendorService {
+export class VendorService implements IVendorService {
 
     public constructor() {
 

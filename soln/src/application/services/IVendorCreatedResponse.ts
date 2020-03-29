@@ -1,5 +1,5 @@
 export class IVendorCreatedResponse {
 
-    isSuccess: string;
+    isSuccess: string = "I am Empty";
 
 }

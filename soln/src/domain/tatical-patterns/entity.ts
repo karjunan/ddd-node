@@ -1,11 +1,17 @@
-import uuid from "uuid/v4";
+import * as  uid from "uuid";
 
 
 export class Entity {
 
-    protected uid: string = uuid();
 
-    getUUid(): string {
-        return uuid;
+    private uuid: string;
+
+    public constructor() {
+        this.uuid = uid.v4()
     }
+
+    public getUUID(): string{
+        return this.uuid;
+    }
+
 }

@@ -1,15 +1,23 @@
 
 import "reflect-metadata";
 import * as express from 'express';
-import container from "./inversify.config";
+import {container} from "./inversify.config";
 import { InversifyExpressServer, interfaces, TYPE } from "inversify-express-utils";
+import bodyParser = require('body-parser');
+import './application/rest/vendorController';
 
-// import './controllers/PostController';
+let server =  new InversifyExpressServer(container);
 
-const app = express();
-
-let server =  new InversifyExpressServer(container, null, { rootPath: "/api" }, app);
+server.setConfig((app) => {
+    // add body parser
+    app.use(bodyParser.urlencoded({
+      extended: true
+    }));
+    app.use(bodyParser.json());
+  });
 
 let appConfigured = server.build();
-let serve = appConfigured.listen(process.env.PORT || 3000, 
-    () => `App running on ${serve.address().port}`);
+
+appConfigured.listen(3000, () => {
+    console.log("Application listening on port 3000")
+});
