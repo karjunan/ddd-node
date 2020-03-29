@@ -2,19 +2,24 @@
   "name": "soln",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^12.12.31",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "inversify": "^5.0.1",
     "inversify-express-utils": "^6.3.2",
     "nodemon": "^2.0.2",
-    "typescript": "^3.8.3"
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.2",
+    "uuidv4": "^6.0.6"
   }
 }
