@@ -10,40 +10,30 @@ export class Vendor extends Entity implements AggregateRoot {
 
     private constructor(vendorNumber: string,
                     vendorName: string, 
-                    singleClient: SingleClient,
                     nationallyManaged: string,
-                    tenant: Tenant) {
+                    singleClient?: SingleClient,
+                    tenant?: Tenant) {
             super();           
             this.vendorNumber = vendorNumber;
             this.vendorName = vendorName;
-            this.singleClient = singleClient;
             this.nationallyManaged = nationallyManaged;
-            this.tenant = tenant;
         }
 
     private vendorNumber : string; 
 
     private vendorName : string;
 
-    private singleClient: SingleClient;
-
-    private tenant: Tenant;
-
     private nationallyManaged: string;
 
 
     public static createVendor(vendorNumber: string,
                             vendorName: string, 
-                            singleClient: SingleClient,
                             nationallyManaged: string,
-                            tenant: Tenant): Vendor {
+                            singleClient?: SingleClient,
+                            tenant?: Tenant): Vendor {
         
-        const vendor = new Vendor(vendorNumber,vendorName,singleClient,nationallyManaged,tenant);
+        const vendor = new Vendor(vendorNumber,vendorName,nationallyManaged,singleClient,tenant);
         return vendor;
-    }
-
-    public createBusinessUnit(businessUnit: string,taggedValues: []): BusinessUnit {
-        return BusinessUnit.create(businessUnit,taggedValues); 
     }
 
 }

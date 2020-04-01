@@ -19,6 +19,7 @@ export class VendorController implements interfaces.Controller{
     @httpPost("/")
     public async index (@requestBody() req: IVendorProperties, 
                         @response() res: express.Response) {
+      console.log("Request => ", req);                    
       try {
         const posts = await this.vendorService.createVendor(req)
         res.status(200).json(posts);

@@ -1,0 +1,15 @@
+{
+	"vendorNumber" : "123123",
+	"vendorName":"krishna",
+	"singleClient" : {
+		"singleClientID":"asdfadfasdf",
+		"clientNumber" : "5234234"
+	},
+	"businessUnit" : {
+		"businessUnitName": "Toyota Retail"	
+	},
+	"nationallyManaged":"Yes",
+	"tenant" : {
+		"tenantID":  "Pickles"
+	}
+}

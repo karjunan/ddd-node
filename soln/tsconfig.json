@@ -10,6 +10,7 @@
       "moduleResolution": "node",
       "importHelpers": true,
       "listEmittedFiles": true,
+      "strictPropertyInitialization": false,
       "types": [
         "node",
         "reflect-metadata"

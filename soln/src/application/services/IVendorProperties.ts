@@ -3,10 +3,10 @@ export interface IVendorProperties {
 
     vendorNumber: string;
     vendorName: string;
-    singleClient: SingleClient;
-    businessUnit: BusinessUnit;
     nationallyManaged: string;
-    tenant: Tenant;
+    singleClient?: SingleClient;
+    businessUnit?: BusinessUnit;
+    tenant?: Tenant;
 
 }
 
