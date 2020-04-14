@@ -5,12 +5,9 @@
     "username": "SA",
     "password": "India_123!",
     "database": "tempdb",
-    "synchronize": true,
+    "synchronize": false,
     "logging": true,
     "entities": [
-       "src/infrastruture/persistance/model/**/*.ts"
-    ],
-    "migrations": [
-        "src/infrastruture/persistance/model/**/*.ts"
+       "./build/infrastructure/persistance/model/*.js"  
     ]
  }

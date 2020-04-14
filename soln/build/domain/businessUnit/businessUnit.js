@@ -13,3 +13,4 @@ class BusinessUnit extends entity_1.Entity {
     }
 }
 exports.BusinessUnit = BusinessUnit;
+//# sourceMappingURL=businessUnit.js.map

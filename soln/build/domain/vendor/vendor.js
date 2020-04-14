@@ -14,3 +14,4 @@ class Vendor extends entity_1.Entity {
     }
 }
 exports.Vendor = Vendor;
+//# sourceMappingURL=vendor.js.map

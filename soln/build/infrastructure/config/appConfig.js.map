@@ -1,0 +1,1 @@
+{"version":3,"file":"appConfig.js","sourceRoot":"","sources":["../../../src/infrastructure/config/appConfig.ts"],"names":[],"mappings":";;AAAA,4BAA0B;AAGf,QAAA,SAAS,GAAsB;IACtC,IAAI,EAAE,OAAO;IACb,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,IAAI;IACV,QAAQ,EAAE,IAAI;IACd,QAAQ,EAAE,YAAY;IACtB,QAAQ,EAAE,QAAQ;IAClB,QAAQ,EAAE;QACL,wDAAwD;KAC5D;IACD,WAAW,EAAE,IAAI;IACjB,OAAO,EAAE,IAAI;CAChB,CAAA"}

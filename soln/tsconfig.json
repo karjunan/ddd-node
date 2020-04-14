@@ -11,19 +11,9 @@
       "importHelpers": true,
       "listEmittedFiles": true,
       "strictPropertyInitialization": false,
-      "types": [
-        "node",
-        "reflect-metadata"
-      ],
-      "typeRoots": [
-        "node_modules/@types"
-      ]
+      "sourceMap": true
     },
     "include": [
-      "./src/**/*.ts"
-    ],
-    "exclude": [
-      "./src/public/",
-      "node_modules"
-    ]
+      "src/**/*"
+  ]
   }

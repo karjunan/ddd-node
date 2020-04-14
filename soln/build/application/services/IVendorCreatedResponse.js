@@ -6,3 +6,4 @@ class IVendorCreatedResponse {
     }
 }
 exports.IVendorCreatedResponse = IVendorCreatedResponse;
+//# sourceMappingURL=IVendorCreatedResponse.js.map

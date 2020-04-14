@@ -5,14 +5,17 @@ import { Tenant } from "../../domain/tenant/tenant";
 import { IVendorCreatedResponse } from "./IVendorCreatedResponse";
 import { injectable, inject } from "inversify";
 import { IVendorService } from './IVendorService';
-import { VendorSqlRepository } from '../../infrastructure/persistance/repositories/vendorRespository';
+import { VendorRespository } from '../../infrastructure/persistance/repositories/vendorRespository';
 import { TYPES } from '../../infrastructure/types';
+import {Vendor as VendorEnity} from '../../infrastructure/persistance/model/vendor'
 
 @injectable()
 export class VendorService implements IVendorService {
 
-    public constructor(@inject(TYPES.VendorReposiotry) vendorSqlRepository: VendorSqlRepository ) {
+    // private vendorSqlRespoitory: VendorRespository;
 
+    public constructor(@inject(TYPES.VENDOR_RESPOSITORY) public vendorSqlRepository: VendorRespository ) {
+        // this.vendorSqlRespoitory = vendorSqlRepository;
     }
 
     public async createVendor(request: IVendorProperties) : Promise<IVendorCreatedResponse> {
@@ -22,7 +25,8 @@ export class VendorService implements IVendorService {
                             request.nationallyManaged);
                           
         console.log("Finally created a Vendor");
-
+        let v: VendorEnity = new VendorEnity()
+        this.vendorSqlRepository.insert();
         const res = {"isSuccess": JSON.stringify(vendor)}
         return res;
 

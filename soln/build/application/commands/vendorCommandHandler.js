@@ -5,3 +5,4 @@ class VendorCommandHandler {
     }
 }
 exports.VendorCommandHandler = VendorCommandHandler;
+//# sourceMappingURL=vendorCommandHandler.js.map

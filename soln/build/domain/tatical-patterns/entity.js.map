@@ -1,0 +1,1 @@
+{"version":3,"file":"entity.js","sourceRoot":"","sources":["../../../src/domain/tatical-patterns/entity.ts"],"names":[],"mappings":";;AAAA,4BAA6B;AAG7B,MAAa,MAAM;IAKf;QACI,IAAI,CAAC,IAAI,GAAG,GAAG,CAAC,EAAE,EAAE,CAAA;IACxB,CAAC;IAEM,OAAO;QACV,OAAO,IAAI,CAAC,IAAI,CAAC;IACrB,CAAC;CAEJ;AAbD,wBAaC"}

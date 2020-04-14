@@ -1,18 +1,27 @@
 import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
-@Entity({name:"vendor" })
+@Entity("Vendor")
 export class Vendor {
 
-    @PrimaryGeneratedColumn()
-    id: number;
+    @PrimaryGeneratedColumn("uuid")
+    vendorId: string;
 
-    @Column()
-    firstName: string;
+    @Column({ type: "varchar", length: 50, nullable: true })
+    vendorName: string;
 
-    @Column()
-    lastName: string;
+    @Column({ type: "varchar", length: 1, nullable: true })
+    nationallyManaged: string;
 
-    @Column()
-    age: number;
+    @Column({ type: "datetime" })
+    auditCreatedDateTime: Date;
+
+    @Column({ type: "varchar", length: 50 })
+    auditCreatedBy: string;
+
+    @Column({ type: "datetime", nullable: true })
+    auditModifiedDateTime?: Date;
+
+    @Column({ type: "varchar", length: 50, nullable: true })
+    auditModifiedBy?: string;
 
 }

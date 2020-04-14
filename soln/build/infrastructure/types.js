@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const TYPES = {
     VENDOR_SERVICE: Symbol.for("IVendorService"),
-    VendorReposiotry: Symbol("VendorReposiotry")
+    VENDOR_RESPOSITORY: Symbol("IVendorRespository")
 };
 exports.TYPES = TYPES;
+//# sourceMappingURL=types.js.map

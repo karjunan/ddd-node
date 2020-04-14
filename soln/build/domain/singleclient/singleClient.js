@@ -13,3 +13,4 @@ class SingleClient extends valueObject_1.ValueObject {
     }
 }
 exports.SingleClient = SingleClient;
+//# sourceMappingURL=singleClient.js.map

@@ -50,3 +50,4 @@ VendorController = tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [vendorService_1.VendorService])
 ], VendorController);
 exports.VendorController = VendorController;
+//# sourceMappingURL=vendorController.js.map

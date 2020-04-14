@@ -5,22 +5,35 @@ const typeorm_1 = require("typeorm");
 let Vendor = class Vendor {
 };
 tslib_1.__decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
-    tslib_1.__metadata("design:type", Number)
-], Vendor.prototype, "id", void 0);
-tslib_1.__decorate([
-    typeorm_1.Column(),
+    typeorm_1.PrimaryGeneratedColumn("uuid"),
     tslib_1.__metadata("design:type", String)
-], Vendor.prototype, "firstName", void 0);
+], Vendor.prototype, "vendorId", void 0);
 tslib_1.__decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ type: "varchar", length: 50, nullable: true }),
     tslib_1.__metadata("design:type", String)
-], Vendor.prototype, "lastName", void 0);
+], Vendor.prototype, "vendorName", void 0);
 tslib_1.__decorate([
-    typeorm_1.Column(),
-    tslib_1.__metadata("design:type", Number)
-], Vendor.prototype, "age", void 0);
+    typeorm_1.Column({ type: "varchar", length: 1, nullable: true }),
+    tslib_1.__metadata("design:type", String)
+], Vendor.prototype, "nationallyManaged", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column({ type: "datetime" }),
+    tslib_1.__metadata("design:type", Date)
+], Vendor.prototype, "auditCreatedDateTime", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column({ type: "varchar", length: 50 }),
+    tslib_1.__metadata("design:type", String)
+], Vendor.prototype, "auditCreatedBy", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column({ type: "datetime", nullable: true }),
+    tslib_1.__metadata("design:type", Date)
+], Vendor.prototype, "auditModifiedDateTime", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column({ type: "varchar", length: 50, nullable: true }),
+    tslib_1.__metadata("design:type", String)
+], Vendor.prototype, "auditModifiedBy", void 0);
 Vendor = tslib_1.__decorate([
-    typeorm_1.Entity({ name: "vendor" })
+    typeorm_1.Entity("Vendor")
 ], Vendor);
 exports.Vendor = Vendor;
+//# sourceMappingURL=vendor.js.map

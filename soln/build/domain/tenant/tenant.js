@@ -12,3 +12,4 @@ class Tenant extends valueObject_1.ValueObject {
     }
 }
 exports.Tenant = Tenant;
+//# sourceMappingURL=tenant.js.map
