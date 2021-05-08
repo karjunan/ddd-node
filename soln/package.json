@@ -32,7 +32,7 @@
     "mssql": "^6.2.0",
     "nodemon": "^2.0.3",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.24",
+    "typeorm": "^0.2.25",
     "typescript": "^3.8.3",
     "uuid": "^7.0.2",
     "uuidv4": "^6.0.6"
